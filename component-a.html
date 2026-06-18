@@ -1,0 +1,91 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Component A - Shuwen Wang Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="white-spider.css" />
+  <script src="libraries/p5.min.js" defer></script>
+  <script src="space-effects.js" defer></script>
+  <script src="white-spider.js" defer></script>
+  <script src="protect-media.js" defer></script>
+</head>
+<body>
+  <main class="page-shell">
+    <nav class="top-nav" aria-label="Page navigation">
+      <a class="back-link" href="https://shuwenwang110.github.io/Portfolio/" data-transition>Back to portfolio</a>
+      <p class="page-explain">Component A collects early game design ideas, visual drafts, and process pages, showing how concepts begin to form before becoming a complete interactive system.</p>
+    </nav>
+
+    <section class="project-hero">
+      <div>
+        <p class="eyebrow">Selected process pages</p>
+        <h1 class="project-title">Component A</h1>
+      </div>
+    </section>
+
+    <section class="gallery" aria-label="Component A works">
+      <figure class="work-frame">
+        <img src="component-a/Component 1_01.png" alt="Component A work page 01" loading="eager" />
+        <figcaption><span>Component A</span><span>Page 01</span></figcaption>
+      </figure>
+      <figure class="work-frame">
+        <img src="component-a/Component 1_02.png" alt="Component A work page 02" loading="lazy" />
+        <figcaption><span>Component A</span><span>Page 02</span></figcaption>
+      </figure>
+      <figure class="work-frame">
+        <img src="component-a/Component 1_03.png" alt="Component A work page 03" loading="lazy" />
+        <figcaption><span>Component A</span><span>Page 03</span></figcaption>
+      </figure>
+      <figure class="work-frame">
+        <img src="component-a/Component 1_04.png" alt="Component A work page 04" loading="lazy" />
+        <figcaption><span>Component A</span><span>Page 04</span></figcaption>
+      </figure>
+      <figure class="work-frame">
+        <img src="component-a/Component 1_05.png" alt="Component A work page 05" loading="lazy" />
+        <figcaption><span>Component A</span><span>Page 05</span></figcaption>
+      </figure>
+      <figure class="work-frame">
+        <img src="component-a/Component 1_06.png" alt="Component A work page 06" loading="lazy" />
+        <figcaption><span>Component A</span><span>Page 06</span></figcaption>
+      </figure>
+      <figure class="work-frame">
+        <img src="component-a/Component 1_07.png" alt="Component A work page 07" loading="lazy" />
+        <figcaption><span>Component A</span><span>Page 07</span></figcaption>
+      </figure>
+      <figure class="work-frame">
+        <img src="component-a/Component 1_08.png" alt="Component A work page 08" loading="lazy" />
+        <figcaption><span>Component A</span><span>Page 08</span></figcaption>
+      </figure>
+      <figure class="work-frame">
+        <img src="component-a/Component 1_09.png" alt="Component A work page 09" loading="lazy" />
+        <figcaption><span>Component A</span><span>Page 09</span></figcaption>
+      </figure>
+      <figure class="work-frame">
+        <img src="component-a/Component 1_10.png" alt="Component A work page 10" loading="lazy" />
+        <figcaption><span>Component A</span><span>Page 10</span></figcaption>
+      </figure>
+      <figure class="work-frame">
+        <img src="component-a/Component 1_11.png" alt="Component A work page 11" loading="lazy" />
+        <figcaption><span>Component A</span><span>Page 11</span></figcaption>
+      </figure>
+    </section>
+    <a class="bottom-back-link" href="https://shuwenwang110.github.io/Portfolio/" data-transition>Back to portfolio</a>
+  </main>
+  <div class="fade-screen" aria-hidden="true"></div>
+  <script>
+    document.querySelectorAll("[data-transition]").forEach(link => {
+      link.addEventListener("click", event => {
+        event.preventDefault();
+        document.body.classList.add("is-leaving");
+        setTimeout(() => {
+          window.location.href = link.href;
+        }, 520);
+      });
+    });
+  </script>
+</body>
+</html>
+
+
